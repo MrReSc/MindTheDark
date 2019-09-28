@@ -13,8 +13,17 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 
 $hasSidebar = page_findnearest($conf['sidebar']);
 $showSidebar = $hasSidebar && ($ACT=='show');
+$selectedTheme = tpl_getConf('theme');
+$selectedThemeMode = tpl_getConf('autoDark');
+
+/*Set Theme Mode*/
+if ($selectedThemeMode == '1')
+{
+    $selectedTheme = 'auto';
+}
+
 ?><!DOCTYPE html>
-<html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
+<html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js" theme="<?php echo $selectedTheme ?>">
 <head>
     <meta charset="utf-8" />
     <title><?php tpl_pagetitle() ?> [<?php echo strip_tags($conf['title']) ?>]</title>
