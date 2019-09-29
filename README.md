@@ -1,7 +1,9 @@
 # MindTheDark Template
 This template is based on the standard [DokuWiki Template](https://www.dokuwiki.org/template:dokuwiki).
 
-MindTheDark offers a light and a dark color scheme for your DokuWiki. If the `autoDark` option is enabled, the color scheme of the operating system is used. So the user can choose which color scheme he prefers.
+MindTheDark offers a light and a dark color scheme for your DokuWiki. The color scheme and the style are optimized for software documentation. The optics are flat.
+
+If the `autoDark` option is enabled, the color scheme of the operating system is used. So the user can choose which color scheme he prefers.
 
 ## Features
 * light and a dark color scheme (`theme` option)
