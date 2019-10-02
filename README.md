@@ -5,6 +5,8 @@ MindTheDark offers a light and a dark color scheme for your DokuWiki. The color 
 
 If the `autoDark` option is enabled, the color scheme of the operating system is used. So the user can choose which color scheme he prefers.
 
+![screenshot](screenshot/screenshot.png)
+
 ## Features
 * light and a dark color scheme (`theme` option in Configuration Manager)
 * automatic color scheme depending on operating system settings (`autoDark` option in Configuration Manager)
