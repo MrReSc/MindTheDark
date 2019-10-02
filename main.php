@@ -13,17 +13,12 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 
 $hasSidebar = page_findnearest($conf['sidebar']);
 $showSidebar = $hasSidebar && ($ACT=='show');
-$selectedTheme = tpl_getConf('theme');
-$selectedThemeMode = tpl_getConf('autoDark');
-
-/*Set Theme Mode*/
-if ($selectedThemeMode == '1')
-{
-    $selectedTheme = 'auto';
-}
 
 ?><!DOCTYPE html>
-<html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js" theme="<?php echo $selectedTheme ?>">
+<html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js" ?>
+
+<?php include('tpl_autocolor.php') ?>
+
 <head>
     <meta charset="utf-8" />
     <title><?php tpl_pagetitle() ?> [<?php echo strip_tags($conf['title']) ?>]</title>
@@ -89,6 +84,7 @@ if ($selectedThemeMode == '1')
         </div><!-- /wrapper -->
 
         <?php include('tpl_footer.php') ?>
+        
     </div></div><!-- /site -->
 
     <div class="no"><?php tpl_indexerWebBug() /* provide DokuWiki housekeeping, required in all templates */ ?></div>

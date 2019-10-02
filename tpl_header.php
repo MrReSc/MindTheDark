@@ -40,6 +40,16 @@ if (!defined('DOKU_INC')) die();
             <div id="dokuwiki__usertools">
                 <h3 class="a11y"><?php echo $lang['user_tools']; ?></h3>
                 <ul>
+
+                <?php /*if(tpl_getConf('userChoice') == '1'): ?>
+
+                    <li class="switch">
+                        <input class="switch__input" type="checkbox" id="themeSwitch" onclick="themeChangeFunction()">
+                        <label aria-hidden="true" class="switch__label" for="themeSwitch">On</label>
+                    </li>
+                    
+                <?php endif */?>
+
                     <?php
                         if (!empty($_SERVER['REMOTE_USER'])) {
                             echo '<li class="user">';
@@ -77,8 +87,6 @@ if (!defined('DOKU_INC')) die();
             <?php endif ?>
         </div>
     <?php endif ?>
-
-
 
     <hr class="a11y" />
 </div></div><!-- /header -->

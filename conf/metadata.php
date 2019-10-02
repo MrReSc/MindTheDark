@@ -6,6 +6,5 @@
 
 $meta['theme']            = array('multichoice','_choices' => array('light','dark'));
 $meta['autoDark']         = array('onoff');
+/*$meta['userChoice']       = array('onoff');*/
 
-/*$conf['autoDark']   = array('onoff');
-$conf['theme']      = array('multichoice','_choices' => array('light','dark'));
