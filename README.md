@@ -6,10 +6,13 @@ MindTheDark offers a light and a dark color scheme for your DokuWiki. The color 
 If the `autoDark` option is enabled, the color scheme of the operating system is used. So the user can choose which color scheme he prefers.
 
 ## Features
-* light and a dark color scheme (`theme` option)
-* automatic color scheme depending on operating system settings
+* light and a dark color scheme (`theme` option in Configuration Manager)
+* automatic color scheme depending on operating system settings (`autoDark` option in Configuration Manager)
 * all colors of the light and dark color scheme can be set in the Configuration Manager
 * and all features the standard [DokuWiki Template](https://www.dokuwiki.org/template:dokuwiki#features) offers
+
+## Planned Features
+* Toggle the color scheme regardless of the operating system setting. The user should be able to switch the color scheme with a button. (This requires JavaScript and some research. Help is appreciated.)
 
 ## Customizing
 The MindTheDark Template offers all customizing like the standard [DokuWiki Template](https://www.dokuwiki.org/template:dokuwiki#customizing).
@@ -30,6 +33,8 @@ For now I consider this template as `beta` for the following reasons:
 * not heavily tested, especially not on different browsers
 * not tested on mobiles
 * still under construction
+
+Issues and improvements can be reported [here](https://github.com/MrReSc/MindTheDark).
 
 ## Installation
 
