@@ -3,7 +3,7 @@ This template is based on the standard [DokuWiki Template](https://www.dokuwiki.
 
 MindTheDark offers a light and a dark color scheme for your DokuWiki. The color scheme and the style are optimized for software documentation. The optics are flat.
 
-If the `userCoice` option is enabled, an option to change the color scheme will appear in the header.
+If the `userChoice` option is enabled, an option to change the color scheme will appear in the header.
 
 ![screenshot_toggle](screenshot/screenshot_toggle.png)
 
@@ -16,7 +16,7 @@ If neither of the two options is selected, a static color scheme can be selected
 ## Features
 * light and a dark color scheme (`theme` option in Configuration Manager)
 * automatic color scheme depending on operating system settings (`autoDark` option in Configuration Manager)
-* change of the color scheme by the user (`userCoice` option in Configuration Manager)
+* change of the color scheme by the user (`userChoice` option in Configuration Manager)
 * all colors of the light and dark color scheme can be set in the Configuration Manager
 * and all features the standard [DokuWiki Template](https://www.dokuwiki.org/template:dokuwiki#features) offers
 
