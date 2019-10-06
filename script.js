@@ -77,3 +77,54 @@ jQuery(function(){
         $content.css('min-height', $sidebar.height());
     }
 });
+
+jQuery(function() {
+
+    var $mode = jQuery('html').attr('theme');   //gets the current theme
+
+    //If User's choice is enabled, safe in local storage
+    if (jQuery('#configUserChoice').attr('content') == '1'){
+        localStorage.setItem('configUserChoice', '1');
+
+        if ($mode == 'light') {
+            //jQuery('#themeSwitch').html('Dark');
+        }
+        if ($mode == 'dark') {
+            //jQuery('#themeSwitch').html('Light');
+        }
+        if ($mode == 'auto' || $mode == null) {
+            jQuery('html').attr('theme', 'light');
+            localStorage.setItem('theme', 'light');
+            //jQuery('#themeSwitch').html('Dark');
+        }
+    }
+
+    if (jQuery('#configUserChoice').attr('content') == '0'){
+        localStorage.setItem('configUserChoice', '0');
+    }
+
+    //If button gets clicked
+    jQuery('#themeSwitch').click(function() {
+
+        jQuery(this).blur();    //remove focus on button
+        $mode = jQuery('html').attr('theme');   //gets the current theme
+
+        if ($mode == 'light') {
+            jQuery('html').attr('theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+            //jQuery('#themeSwitch').html('Light');
+        }
+
+        if ($mode == 'dark' || $mode == 'auto' || $mode == null) {
+            jQuery('html').attr('theme', 'light');
+            localStorage.setItem('theme', 'light');
+            //jQuery('#themeSwitch').html('Dark');
+        }
+
+    });
+});
+
+if (localStorage.getItem('configUserChoice') == '1'){
+    var $themeFromStorage = localStorage.getItem('theme');
+    jQuery('html').attr('theme', $themeFromStorage);
+}

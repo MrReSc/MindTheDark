@@ -10,7 +10,7 @@ if (!defined('DOKU_INC')) die();
 
 $selectedTheme = tpl_getConf('theme');
 $selectedThemeMode = tpl_getConf('autoDark');
-/*$selectedUserChoice = tpl_getConf('userChoice');*/
+$selectedUserChoice = tpl_getConf('userChoice');
 
 /*Set Theme Mode*/
 if ($selectedThemeMode == '1')
@@ -19,5 +19,9 @@ if ($selectedThemeMode == '1')
 }
 
 ?><!DOCTYPE html>
-<html theme="<?php echo $selectedTheme ?>">
+
+<?php if(tpl_getConf('userChoice') == '0'): ?>
+    <html theme="<?php echo $selectedTheme ?>">   
+<?php endif ?>
+
 </html>
