@@ -86,16 +86,9 @@ jQuery(function() {
     if (jQuery('#configUserChoice').attr('content') == '1'){
         localStorage.setItem('configUserChoice', '1');
 
-        if ($mode == 'light') {
-            //jQuery('#themeSwitch').html('Dark');
-        }
-        if ($mode == 'dark') {
-            //jQuery('#themeSwitch').html('Light');
-        }
         if ($mode == 'auto' || $mode == null) {
             jQuery('html').attr('theme', 'light');
             localStorage.setItem('theme', 'light');
-            //jQuery('#themeSwitch').html('Dark');
         }
     }
 
@@ -112,13 +105,11 @@ jQuery(function() {
         if ($mode == 'light') {
             jQuery('html').attr('theme', 'dark');
             localStorage.setItem('theme', 'dark');
-            //jQuery('#themeSwitch').html('Light');
         }
 
         if ($mode == 'dark' || $mode == 'auto' || $mode == null) {
             jQuery('html').attr('theme', 'light');
             localStorage.setItem('theme', 'light');
-            //jQuery('#themeSwitch').html('Dark');
         }
 
     });
