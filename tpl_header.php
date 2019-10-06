@@ -40,22 +40,24 @@ if (!defined('DOKU_INC')) die();
             <div id="dokuwiki__usertools">
                 <h3 class="a11y"><?php echo $lang['user_tools']; ?></h3>
                 <ul>
-
-                <?php /*if(tpl_getConf('userChoice') == '1'): ?>
-
-                    <li class="switch">
-                        <input class="switch__input" type="checkbox" id="themeSwitch" onclick="themeChangeFunction()">
-                        <label aria-hidden="true" class="switch__label" for="themeSwitch">On</label>
-                    </li>
-                    
-                <?php endif */?>
-
                     <?php
                         if (!empty($_SERVER['REMOTE_USER'])) {
                             echo '<li class="user">';
                             tpl_userinfo(); /* 'Logged in as ...' */
                             echo '</li>';
                         }
+                    ?>
+
+                    <?php if(tpl_getConf('userChoice') == '1'): ?>
+                            <li class="action profile">
+                                <a href="#" title="<?php echo tpl_getLang('themeSwitch') ?>" rel="nofollow" id="themeSwitch">
+                                    <span> <?php echo tpl_getLang('themeSwitch') ?> </span>
+                                    <?php echo file_get_contents(template('images/theme.svg')); ?>
+                                </a>
+                            </li>
+                    <?php endif ?>
+
+                    <?php
                         echo (new \dokuwiki\Menu\UserMenu())->getListItems('action ');
                     ?>
                 </ul>

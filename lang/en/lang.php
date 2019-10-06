@@ -29,3 +29,6 @@ $lang['__pre_background_dark__'] = 'Color for the background of the inline code 
 $lang['__link_dark__'] = 'General link color in dark color scheme';
 $lang['__existing_dark__'] = 'Color for links to existing pages in dark color scheme';
 $lang['__missing_dark__'] = 'Color for links to non-existing pages in dark color scheme';
+
+/* Toggle Switch */
+$lang['themeSwitch']               = 'Toggle theme';

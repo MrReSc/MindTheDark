@@ -4,6 +4,6 @@
  *
  */
 
-$lang['theme']            = 'Color scheme when automatic switching is disabled.';
-$lang['autoDark']         = 'Automatic recognition of the color scheme.';
-$lang['userChoice']       = 'Activates a checkbox so that the user can switch over.';
+$lang['theme']      = 'Color scheme if autoDark is disabled.';
+$lang['autoDark']   = 'Automatic detection of the color scheme by the operating system';
+$lang['userChoice'] = 'Activates a button so that the user can switch the color scheme himself.';

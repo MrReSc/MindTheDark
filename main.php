@@ -13,6 +13,7 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 
 $hasSidebar = page_findnearest($conf['sidebar']);
 $showSidebar = $hasSidebar && ($ACT=='show');
+$configUserChoice = tpl_getConf('userChoice');
 
 ?><!DOCTYPE html>
 <html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js" ?>
@@ -27,6 +28,8 @@ $showSidebar = $hasSidebar && ($ACT=='show');
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
     <?php tpl_includeFile('meta.html') ?>
+    <?php tpl_includeFile('meta.html') ?>
+    <meta name="configUserChoice" id="configUserChoice" content="<?php echo $configUserChoice ?>" />
 </head>
 
 <body>

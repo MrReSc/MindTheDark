@@ -31,3 +31,6 @@ $lang['__pre_background_dark__']    = 'Farbe für den Hintergrund der Inline Cod
 $lang['__link_dark__']              = 'Allgemeine Linkfarbe im dunklen Farbschema';
 $lang['__existing_dark__']          = 'Farbe für Links zu existierenden Seiten im dunklen Farbschema';
 $lang['__missing_dark__']           = 'Farbe für Links zu nicht-existierenden Seiten im dunklen Farbschema';
+
+/* Toggle Switch */
+$lang['themeSwitch']               = 'Design umschalten';
