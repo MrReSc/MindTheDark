@@ -8,6 +8,16 @@
  * @author Anika Henke <anika@selfthinker.org>
  */
 
+::-moz-selection { 
+    background: var(--selection_background, #275c9c); 
+    color: var(--selection_color, white);
+}
+
+::selection { 
+    background: var(--selection_background, #275c9c); 
+    color: var(--selection_color, white);
+}
+
 html {
     overflow-x: auto;
     overflow-y: scroll;

@@ -19,6 +19,8 @@
         --pre_background: __pre_background_color__;
         --opacity: 1;
         --transition: none;
+        --selection_color: __selection_color__ ;
+        --selection_background: __selection_background_color__;
     }
 }
 
@@ -43,6 +45,8 @@
         --pre_background: __pre_background_color_dark__;
         --opacity: 0.8;
         --transition: opacity ease-in-out 0.25s;
+        --selection_color: __selection_color_dark__ ;
+        --selection_background: __selection_background_color_dark__;
     }
 }
 
@@ -66,6 +70,8 @@
     --pre_background: __pre_background_color__;
     --opacity: 1;
     --transition: none;
+    --selection_color: __selection_color__ ;
+    --selection_background: __selection_background_color__;
 }
 
 /* Admin selected dark theme and automatic is switched off*/
@@ -88,6 +94,8 @@
     --pre_background: __pre_background_color_dark__;
     --opacity: 0.8;
     --transition: opacity ease-in-out 0.25s;
+    --selection_color: __selection_color_dark__ ;
+    --selection_background: __selection_background_color_dark__;
 }
 
 
