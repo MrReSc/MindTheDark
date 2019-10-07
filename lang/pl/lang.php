@@ -13,5 +13,5 @@ $lang['__site_width__']        = 'Szerokość pełnej strony (możliwa dowolna j
 $lang['__sidebar_width__']     = 'Szerokość paska bocznego, jeśli istnieje (możliwa dowolna jednostka długości: %, px, em, ...)';
 $lang['__tablet_width__']      = 'Szerokość ekrany poniżej której, strona przełączy się w tryb tabletu';
 $lang['__phone_width__']       = 'Szerokość ekrany poniżej której, strona przełączy się w tryb telefonu';
-$lang['__pre_text__']          = 'Kolor for inline code text formatting';
-$lang['__pre_background__']    = 'Kolor tła formatowania kodu liniowego';
+$lang['__pre_text_color__']          = 'Kolor for inline code text formatting';
+$lang['__pre_background_color__']    = 'Kolor tła formatowania kodu liniowego';

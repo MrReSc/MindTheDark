@@ -15,8 +15,8 @@
         --background_site: __background_site__;
         --search-png: url(images/search.png);
         --toc-arrows: url(images/toc-arrows.png);
-        --pre_text: __pre_text__;
-        --pre_background: __pre_background__;
+        --pre_text: __pre_text_color__;
+        --pre_background: __pre_background_color__;
         --opacity: 1;
         --transition: none;
     }
@@ -25,22 +25,22 @@
 /* User prefers dark theme and automatic is switched on*/
 @media (prefers-color-scheme: dark){
     :root[theme="auto"]{
-        --text: __text_dark__;
-        --background: __background_dark__;
-        --text_alt: __text_alt_dark__;
-        --background_alt: __background_alt_dark__;
-        --text_neu: __text_neu_dark__;
-        --background_neu: __background_neu_dark__;
-        --border: __border_dark__;
-        --highlight: __highlight_dark__;
-        --existing: __existing_dark__;
-        --missing: __missing_dark__;
-        --link: __link_dark__;
-        --background_site: __background_site_dark__;
+        --text: __text_color_dark__;
+        --background: __background_color_dark__;
+        --text_alt: __text_alt_color_dark__;
+        --background_alt: __background_alt_color_dark__;
+        --text_neu: __text_neu_color_dark__;
+        --background_neu: __background_neu_color_dark__;
+        --border: __border_color_dark__;
+        --highlight: __highlight_color_dark__;
+        --existing: __existing_color_dark__;
+        --missing: __missing_color_dark__;
+        --link: __link_color_dark__;
+        --background_site: __background_site_color_dark__;
         --search-png: url(images/search-dark.png);
         --toc-arrows: url(images/toc-arrows-dark.png);
-        --pre_text: __pre_text_dark__;
-        --pre_background: __pre_background_dark__;
+        --pre_text: __pre_text_color_dark__;
+        --pre_background: __pre_background_color_dark__;
         --opacity: 0.8;
         --transition: opacity ease-in-out 0.25s;
     }
@@ -62,30 +62,30 @@
     --background_site: __background_site__;
     --search-png: url(images/search.png);
     --toc-arrows: url(images/toc-arrows.png);
-    --pre_text: __pre_text__;
-    --pre_background: __pre_background__;
+    --pre_text: __pre_text_color__;
+    --pre_background: __pre_background_color__;
     --opacity: 1;
     --transition: none;
 }
 
 /* Admin selected dark theme and automatic is switched off*/
 :root[theme="dark"]{
-    --text: __text_dark__;
-    --background: __background_dark__;
-    --text_alt: __text_alt_dark__;
-    --background_alt: __background_alt_dark__;
-    --text_neu: __text_neu_dark__;
-    --background_neu: __background_neu_dark__;
-    --border: __border_dark__;
-    --highlight: __highlight_dark__;
-    --existing: __existing_dark__;
-    --missing: __missing_dark__;
-    --link: __link_dark__;
-    --background_site: __background_site_dark__;
+    --text: __text_color_dark__;
+    --background: __background_color_dark__;
+    --text_alt: __text_alt_color_dark__;
+    --background_alt: __background_alt_color_dark__;
+    --text_neu: __text_neu_color_dark__;
+    --background_neu: __background_neu_color_dark__;
+    --border: __border_color_dark__;
+    --highlight: __highlight_color_dark__;
+    --existing: __existing_color_dark__;
+    --missing: __missing_color_dark__;
+    --link: __link_color_dark__;
+    --background_site: __background_site_color_dark__;
     --search-png: url(images/search-dark.png);
     --toc-arrows: url(images/toc-arrows-dark.png);
-    --pre_text: __pre_text_dark__;
-    --pre_background: __pre_background_dark__;
+    --pre_text: __pre_text_color_dark__;
+    --pre_background: __pre_background_color_dark__;
     --opacity: 0.8;
     --transition: opacity ease-in-out 0.25s;
 }

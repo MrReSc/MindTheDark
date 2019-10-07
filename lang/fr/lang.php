@@ -15,5 +15,5 @@ $lang['__sidebar_width__']     = 'Largeur de la barre latérale, si existante (d
 $lang['__tablet_width__']      = 'En dessous de cette largeur, le site passe en mode tablette.';
 $lang['__phone_width__']       = 'En dessous de cette largeur, le site passe en mode smartphone.';
 $lang['__theme_color__']       = 'Thème de couleur de l\'application web';
-$lang['__pre_text__']           = 'Couleur pour le formatage du texte du code en ligne' ;
-$lang['__pre_background__']    = 'Couleur pour le fond du formatage du code en ligne' ;
+$lang['__pre_text_color__']           = 'Couleur pour le formatage du texte du code en ligne' ;
+$lang['__pre_background_color__']    = 'Couleur pour le fond du formatage du code en ligne' ;

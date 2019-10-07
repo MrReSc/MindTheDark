@@ -15,5 +15,5 @@ $lang['__sidebar_width__']     = 'Breedte van de zijbalk,  indien aanwezig  (in 
 $lang['__tablet_width__']      = 'Beneden de breedte van deze schermafmetingen schakelt de site over naar tablet modus.';
 $lang['__phone_width__']       = 'Beneden de breedte van deze schermafmetingen schakelt de site over naar telefoon modus.';
 $lang['__theme_color__']       = 'Thema kleur van de web app';
-$lang['__pre_text__']          = 'Kleur voor inline code tekstopmaak';
-$lang['__pre_background__']    = 'Kleur voor de achtergrond van de opmaak van de inline code';
+$lang['__pre_text_color__']          = 'Kleur voor inline code tekstopmaak';
+$lang['__pre_background_color__']    = 'Kleur voor de achtergrond van de opmaak van de inline code';

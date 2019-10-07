@@ -13,5 +13,5 @@ $lang['__site_width__']        = 'Larghezza dell\'intero sito (può essere una q
 $lang['__sidebar_width__']     = 'Larghezza della barra laterale, se presente (può essere una qualunque unità di lunghezza: %, px, em, ...)';
 $lang['__tablet_width__']      = 'Per dimensioni dello schermo al di sotto di questa larghezza, il sito passa in modalità tablet';
 $lang['__phone_width__']       = 'Per dimensioni dello schermo al di sotto di questa larghezza, il sito passa in modalità telefono';
-$lang['__pre_text__']          = 'Colore per la formattazione del testo in linea';
-$lang['__pre_background__']    = 'Colore per lo sfondo della formattazione del codice in linea';
+$lang['__pre_text_color__']          = 'Colore per la formattazione del testo in linea';
+$lang['__pre_background_color__']    = 'Colore per lo sfondo della formattazione del codice in linea';
