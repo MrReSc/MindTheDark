@@ -29,8 +29,10 @@ Additionally to the standard guaranteed [style.ini](https://www.dokuwiki.org/dev
 
 | placeholder variable | meaning |
 |----------------------|---------|
-| `__pre_text_color__`         | text color of inline code formating|
-| `__pre_background_color__`   | backgroung color of inline code formating|
+| `__pre_text_color__`                  | text color of inline code formating|
+| `__pre_background_color__`            | backgroung color of inline code formating|
+| `__selection_color__`                 | text color of selection|
+| `__selection_background_color__`      | backgroung color of selection|
 
 ## Localization
 The texts are translated into German and English. Contributions are welcome.
