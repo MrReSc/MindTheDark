@@ -15,6 +15,14 @@ if (!defined('DOKU_INC')) die();
     <div class="headings group">
         <ul class="a11y skip">
             <li><a href="#dokuwiki__content"><?php echo $lang['skip_to_content']; ?></a></li>
+
+            <?php if(tpl_getConf('userChoice') == '1'): ?>
+                <li>
+                    <a href="#" title="<?php echo tpl_getLang('themeSwitch') ?>" rel="nofollow" id="themeSwitchMobile">
+                        <span> <?php echo tpl_getLang('themeSwitch') ?> </span>
+                    </a>
+                </li>
+            <?php endif ?>
         </ul>
 
         <h1><?php
@@ -49,12 +57,12 @@ if (!defined('DOKU_INC')) die();
                     ?>
 
                     <?php if(tpl_getConf('userChoice') == '1'): ?>
-                            <li class="action profile">
-                                <a href="#" title="<?php echo tpl_getLang('themeSwitch') ?>" rel="nofollow" id="themeSwitch">
-                                    <span> <?php echo tpl_getLang('themeSwitch') ?> </span>
-                                    <?php echo file_get_contents(template('images/theme.svg')); ?>
-                                </a>
-                            </li>
+                        <li class="action profile">
+                            <a href="#" title="<?php echo tpl_getLang('themeSwitch') ?>" rel="nofollow" id="themeSwitch">
+                                <span> <?php echo tpl_getLang('themeSwitch') ?> </span>
+                                <?php echo file_get_contents(template('images/theme.svg')); ?>
+                            </a>
+                        </li>
                     <?php endif ?>
 
                     <?php

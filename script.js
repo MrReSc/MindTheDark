@@ -96,8 +96,11 @@ jQuery(function() {
         localStorage.setItem('configUserChoice', '0');
     }
 
-    //If button gets clicked
-    jQuery('#themeSwitch').click(function() {
+    //If ThemeSwitch Link gets clicked
+    jQuery('#themeSwitch').click(tpl_themeSwitch);
+    jQuery('#themeSwitchMobile').click(tpl_themeSwitch);
+
+    function tpl_themeSwitch() {
 
         jQuery(this).blur();    //remove focus on button
         $mode = jQuery('html').attr('theme');   //gets the current theme
@@ -111,8 +114,7 @@ jQuery(function() {
             jQuery('html').attr('theme', 'light');
             localStorage.setItem('theme', 'light');
         }
-
-    });
+    }
 });
 
 if (localStorage.getItem('configUserChoice') == '1'){
