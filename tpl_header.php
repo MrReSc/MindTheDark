@@ -14,8 +14,6 @@ if (!defined('DOKU_INC')) die();
 
     <div class="headings group">
         <ul class="a11y skip">
-            <li><a href="#dokuwiki__content"><?php echo $lang['skip_to_content']; ?></a></li>
-
             <?php if(tpl_getConf('userChoice') == '1'): ?>
                 <li>
                     <a href="#" title="<?php echo tpl_getLang('themeSwitch') ?>" rel="nofollow" id="themeSwitchMobile">
