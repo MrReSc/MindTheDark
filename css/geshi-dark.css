@@ -1,0 +1,69 @@
+/* all			*/
+:root[theme="dark"]
+{ border: none !important; }
+ 
+/* lines		*/
+:root[theme="dark"] .li1
+{ background: #252525 !important; }
+:root[theme="dark"] .li2
+{ background: #272727 !important; }
+ 
+/* brackets		*/
+:root[theme="dark"] .br0
+{ color: #bfbfbf !important; }
+ 
+ 
+/* comments		*/
+:root[theme="dark"] .co0,
+:root[theme="dark"] .co1,
+:root[theme="dark"] .coMULTI
+{ color: #7a7a75 !important; }
+ 
+/* strings		*/
+:root[theme="dark"] .st0,
+:root[theme="dark"] .st_h 
+{ color: #ff4444 !important; }
+ 
+ 
+/* methods		*/
+:root[theme="dark"] .me0,
+:root[theme="dark"] .me1
+{ color: #ffffff !important; }
+:root[theme="dark"] .me2
+{ color: #ffcc66 !important; }
+ 
+ 
+ 
+/* keywords		*/
+:root[theme="dark"] .kw1
+{ color: #99ee00 !important; }
+:root[theme="dark"] .kw2
+{ color: #eeaa22 !important; }
+:root[theme="dark"] .kw3
+{ color: #dd88ff !important; }
+:root[theme="dark"] .kw4
+{ color: #ff7744 !important; }
+ 
+/* operators		*/
+:root[theme="dark"] .sy0
+{ color: #44ffbb !important; }
+ 
+/* numbers		*/
+:root[theme="dark"] .nu0
+{ color: #ff2288 !important; }
+ 
+/* variables		*/
+:root[theme="dark"] .re0
+{ color: #88c0ff !important; }
+:root[theme="dark"] .re1
+{ color: #88c0ff !important; }
+:root[theme="dark"] .re2
+{ color: #ccddff !important; }
+:root[theme="dark"] .re3
+{ color: #88c0ff !important; }
+:root[theme="dark"] .re4
+{ color: #88c0ff !important; }
+:root[theme="dark"] .re5
+{ color: #ddddff !important; }
+ 
+/* EOF			*/
