@@ -1,0 +1,88 @@
+/**
+ * This file provides styles for syntax highlighting in dark mode
+ * Syntax highlighting is done by GeShi
+ * It doesn't change the default style light theme style
+ */
+
+@color_1: #bfbfbf;
+@color_2: #7a7a75;
+@color_3: #ff4444;
+@color_4: #ffffff;
+@color_5: #ffcc66;
+@color_6: #99ee00;
+@color_7: #eeaa22;
+@color_8: #dd88ff;
+@color_9: #ff7744;
+@color_10: #44ffbb;
+@color_11: #ff2288;
+@color_12: #88c0ff;
+@color_13: #ccddff;
+@color_14: #ddddff;
+
+
+&:root[theme="dark"] {
+    /* lines		*/
+	.li1 {
+		background: #252525;
+	}
+	.li2 {
+		background: #272727;
+    }
+
+    /* brackets		*/
+	.br0 {
+		color: @color_1;
+    }
+    /* comments		*/
+	.co0, .co1, .coMULTI {
+		color: @color_2;
+    }
+
+    /* strings		*/
+	.st0, .st_h {
+		color: @color_3;
+	}
+
+    /* methods		*/
+	.me0, .me1 {
+		color: @color_4;
+	}
+	.me2 {
+		color: @color_5;
+    }
+    
+    /* keywords		*/
+	.kw1 {
+		color: @color_6;
+	}
+	.kw2 {
+		color: @color_7;
+	}
+	.kw3 {
+		color: @color_8;
+	}
+	.kw4 {
+		color: @color_9;
+    }
+    
+    /* operators		*/
+	.sy0 {
+		color: @color_10;
+    }
+    
+    /* numbers		*/
+	.nu0 {
+		color: @color_11;
+    }
+    
+    /* variables		*/
+	.re0, .re1, .re3, .re4 {
+		color: @color_12;
+	}
+	.re2 {
+		color: @color_13;
+	}
+	.re5 {
+		color: @color_14;
+	}
+}
