@@ -51,4 +51,5 @@ Refer to [template](https://www.dokuwiki.org/template) on how to install and use
 
 
 ## Remarks
-The `autoDark` option only works with modern browsers. The compatibility can be checked [here](https://caniuse.com/#feat=prefers-color-scheme).
+* The `autoDark` option only works with modern browsers. The compatibility can be checked [here](https://caniuse.com/#feat=prefers-color-scheme).
+* GeShi dark mode style sheet provided by @asfethan [https://cyberasylum.eu/how-to-change-geshi-stylesheet](https://cyberasylum.eu/how-to-change-geshi-stylesheet)
