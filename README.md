@@ -19,7 +19,7 @@ If neither of the two options is selected, a static color scheme can be selected
 * change of the color scheme by the user (`userChoice` option in Configuration Manager)
 * all colors of the light and dark color scheme can be set in the Configuration Manager
 * and all features the standard [DokuWiki Template](https://www.dokuwiki.org/template:dokuwiki#features) offers
-* light and dark color theme for syntax highlighting in GeShi (thx @pv2b)
+* light and dark color theme for syntax highlighting in GeShi (thx @pv2b, @asfethan)
 
 ## Customizing
 The MindTheDark Template offers all customizing like the standard [DokuWiki Template](https://www.dokuwiki.org/template:dokuwiki#customizing).
