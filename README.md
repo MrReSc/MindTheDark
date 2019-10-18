@@ -25,7 +25,7 @@ If neither of the two options is selected, a static color scheme can be selected
 ### Note Plugin
 If [Note Plugin](https://www.dokuwiki.org/plugin:note) is installed you can activate the support with the option `pluginNote` in the configuration manager. If the option `pluginNote` is enabled, the base colors of the notes can also be changed.
 
-![screenshot](screenshot/screenshot_note_plugin.png)
+<img src="screenshot/screenshot_note_plugin.png" height="200">
 
 ## Customizing
 The MindTheDark Template offers all customizing like the standard [DokuWiki Template](https://www.dokuwiki.org/template:dokuwiki#customizing).
