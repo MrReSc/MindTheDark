@@ -38,3 +38,9 @@ $lang['__selection_background_color_dark__'] = 'Hintergrundfarbe für den mit de
 
 /* Toggle Switch */
 $lang['themeSwitch']               = 'Design umschalten';
+
+/* Note Plugin */
+$lang['__note_plugin_classic_color__']    =   'Note Plugin Basisfarbe für "classic"';
+$lang['__note_plugin_important_color__']  =   'Note Plugin Basisfarbe für "important"';
+$lang['__note_plugin_warning_color__']    =   'Note Plugin Basisfarbe für "warning"';
+$lang['__note_plugin_tip_color__']        =   'Note Plugin Basisfarbe für "tip"';

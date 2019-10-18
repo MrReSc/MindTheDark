@@ -36,3 +36,9 @@ $lang['__selection_background_color_dark__'] = 'Background color for mouse selec
 
 /* Toggle Switch */
 $lang['themeSwitch']               = 'Toggle theme';
+
+/* Note Plugin */
+$lang['__note_plugin_classic_color__']   = 'Note Plugin Base color for "classic"';
+$lang['__note_plugin_important_color__'] = 'Note Plugin Base color for "important"';
+$lang['__note_plugin_warning_color__']   = 'Note Plugin base color for "warning"';
+$lang['__note_plugin_tip_color__']       = 'Note plugin base color for "tip"';

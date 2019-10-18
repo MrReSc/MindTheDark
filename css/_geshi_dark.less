@@ -4,85 +4,99 @@
  * It doesn't change the default style light theme style
  */
 
-@color_1: #bfbfbf;
-@color_2: #7a7a75;
-@color_3: #ff4444;
-@color_4: #ffffff;
-@color_5: #ffcc66;
-@color_6: #99ee00;
-@color_7: #eeaa22;
-@color_8: #dd88ff;
-@color_9: #ff7744;
-@color_10: #44ffbb;
-@color_11: #ff2288;
-@color_12: #88c0ff;
-@color_13: #ccddff;
-@color_14: #ddddff;
+@brackets: #bfbfbf;
+@comments: #7a7a75;
+@strings: #ff4444;
+@methods: #ffffff;
+@methods2: #ffcc66;
+@keyword1: #99ee00;
+@keyword2: #eeaa22;
+@keyword3: #dd88ff;
+@keyword4: #ff7744;
+@operators: #44ffbb;
+@numbers: #ff2288;
+@variables: #88c0ff;
+@variables2: #ccddff;
+@variables5: #ddddff;
+@lines: #252525;
+@lines2: #272727;
 
+.darkModeGeshi{
 
-&:root[theme="dark"] {
     /* lines		*/
 	.li1 {
-		background: #252525;
+		background: @lines;
 	}
 	.li2 {
-		background: #272727;
+		background: @lines2;
     }
 
     /* brackets		*/
 	.br0 {
-		color: @color_1;
+		color: @brackets;
     }
     /* comments		*/
 	.co0, .co1, .coMULTI {
-		color: @color_2;
+		color: @comments;
     }
 
     /* strings		*/
 	.st0, .st_h {
-		color: @color_3;
+		color: @strings;
 	}
 
     /* methods		*/
 	.me0, .me1 {
-		color: @color_4;
+		color: @methods;
 	}
 	.me2 {
-		color: @color_5;
+		color: @methods2;
     }
     
     /* keywords		*/
 	.kw1 {
-		color: @color_6;
+		color: @keyword1;
 	}
 	.kw2 {
-		color: @color_7;
+		color: @keyword2;
 	}
 	.kw3 {
-		color: @color_8;
+		color: @keyword3;
 	}
 	.kw4 {
-		color: @color_9;
+		color: @keyword4;
     }
     
     /* operators		*/
 	.sy0 {
-		color: @color_10;
+		color: @operators;
     }
     
     /* numbers		*/
 	.nu0 {
-		color: @color_11;
+		color: @numbers;
     }
     
     /* variables		*/
 	.re0, .re1, .re3, .re4 {
-		color: @color_12;
+		color: @variables;
 	}
 	.re2 {
-		color: @color_13;
+		color: @variables2;
 	}
 	.re5 {
-		color: @color_14;
+		color: @variables5;
+	}
+}
+
+/* dark theme and automatic is switched off*/
+&:root[theme="dark"] {
+	.darkModeGeshi();
+}
+
+/* User prefers dark theme and automatic is switched on*/
+@media (prefers-color-scheme: dark){
+	&:root[theme="auto"] {
+		.darkModeGeshi();
 	}
 }

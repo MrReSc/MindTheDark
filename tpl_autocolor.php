@@ -12,6 +12,8 @@ $selectedTheme = tpl_getConf('theme');
 $selectedThemeMode = tpl_getConf('autoDark');
 $selectedUserChoice = tpl_getConf('userChoice');
 
+$pluginNote = tpl_getConf('pluginNote');
+
 /*Set Theme Mode*/
 if ($selectedThemeMode == '1')
 {
@@ -22,6 +24,10 @@ if ($selectedThemeMode == '1')
 
 <?php if(tpl_getConf('userChoice') == '0'): ?>
     <html theme="<?php echo $selectedTheme ?>">   
+<?php endif ?>
+
+<?php if(tpl_getConf('pluginNote') == '1'): ?>
+    <html pluginnote="<?php echo $pluginNote ?>">   
 <?php endif ?>
 
 </html>
