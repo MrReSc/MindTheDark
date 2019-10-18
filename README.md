@@ -21,6 +21,12 @@ If neither of the two options is selected, a static color scheme can be selected
 * and all features the standard [DokuWiki Template](https://www.dokuwiki.org/template:dokuwiki#features) offers
 * light and dark color theme for syntax highlighting in GeShi (thx @pv2b, @asfethan)
 
+## Plugin Support
+### Note Plugin
+If [Note Plugin](https://www.dokuwiki.org/plugin:note) is installed you can activate the support with the option `pluginNote` in the configuration manager. If the option `pluginNote` is enabled, the base colors of the notes can also be changed.
+
+![screenshot](screenshot/screenshot_note_plugin.png)
+
 ## Customizing
 The MindTheDark Template offers all customizing like the standard [DokuWiki Template](https://www.dokuwiki.org/template:dokuwiki#customizing).
 
@@ -33,6 +39,10 @@ Additionally to the standard guaranteed [style.ini](https://www.dokuwiki.org/dev
 | `__pre_background_color__`            | backgroung color of inline code formating|
 | `__selection_color__`                 | text color of selection|
 | `__selection_background_color__`      | backgroung color of selection|
+| `__note_plugin_classic_color__`       | base color for note plugin `<classic>`|
+| `__note_plugin_important_color__`     | base color for note plugin `<important>`|
+| `__note_plugin_warning_color__`       | base color for note plugin `<warning>`|
+| `__note_plugin_tip_color__`           | base color for note plugin `<tip>`|
 
 ## Localization
 The texts are translated into German and English. Contributions are welcome.
