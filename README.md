@@ -9,7 +9,7 @@ If the `userChoice` option is enabled, an option to change the color scheme will
 
 If the `autoDark` option is enabled, the color scheme of the operating system is used. 
 
-![screenshot](screenshot/screenshot.png)
+![screenshot](screenshot/screenshot_theme.png)
 
 If neither of the two options is selected, a static color scheme can be selected via `theme`.
 
