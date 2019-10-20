@@ -22,15 +22,14 @@
         text-align: justify;
         vertical-align: middle;
         border-collapse: collapse;
-        padding: 15px 20px 15px 20px;
-        background-position: 20px 50%;
+        padding: 15px 20px 15px 50px;
+        background-position: 15px 50%;
         background-repeat: no-repeat;
         border-radius: 2px;
         color: black;
         font-size: 100%;
         overflow: auto;
         font-family: Consolas,"Andale Mono WT","Andale Mono","Bitstream Vera Sans Mono","Nimbus Mono L",Monaco,"Courier New",monospace;
-        background-image: none;
         border-left: 13px solid;
         border-right: 1px solid;
         border-top: 1px solid;
@@ -40,21 +39,25 @@
     .noteclassic {
         border-color: darken(@classic_light, 20%);
         background-color: @classic_light;
+        background-image: url(images/plugin_note/note.svg);
     }
 
     .noteimportant {
         border-color: darken(@important_light, 40%);
         background-color: @important_light;
+        background-image: url(images/plugin_note/important.svg);
     }
 
     .notewarning {
         border-color: darken(@warning_light, 20%);
         background-color: @warning_light;
+        background-image: url(images/plugin_note/warning.svg);
     }
 
     .notetip {
         border-color: darken(@tip_light, 20%);
         background-color: @tip_light;
+        background-image: url(images/plugin_note/tip.svg);
     }
 
     /**************************************************/
