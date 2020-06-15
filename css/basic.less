@@ -35,6 +35,25 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
+/*____________ scrollbars ____________*/
+
+/* The emerging W3C standard
+   that is currently Firefox-only */
+* {
+    scrollbar-color: var(--scrollbar_thumb) var(--scrollbar_track);
+}
+  
+  /* Works on Chrome/Edge/Safari */
+::-webkit-scrollbar {
+    background: var(--scrollbar_track);
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar_thumb);
+}
+
 /*____________ config manager ____________*/
 
 #config__manager fieldset{

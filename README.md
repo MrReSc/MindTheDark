@@ -39,6 +39,8 @@ Additionally to the standard guaranteed [style.ini](https://www.dokuwiki.org/dev
 | `__pre_background_color__`            | backgroung color of inline code formating|
 | `__selection_color__`                 | text color of selection|
 | `__selection_background_color__`      | backgroung color of selection|
+| `__scrollbar_track__`                 | color of the scrollbar|
+| `__scrollbar_thumb__`                 | color of the scrollbar button|
 | `__note_plugin_classic_color__`       | base color for note plugin `<classic>`|
 | `__note_plugin_important_color__`     | base color for note plugin `<important>`|
 | `__note_plugin_warning_color__`       | base color for note plugin `<warning>`|
