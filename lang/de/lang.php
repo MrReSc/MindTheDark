@@ -17,8 +17,8 @@ $lang['__pre_text_color__']          = 'Farbe für den Text der Inline Code Form
 $lang['__pre_background_color__']    = 'Farbe für den Hintergrund der Inline Code Formatierung';
 $lang['__selection_color__']            = 'Farbe für den mit der Maus ausgewählten Text';
 $lang['__selection_background_color__'] = 'Hintergrundfarbe für den mit der Maus ausgewählten Text';
-$lang['__scrollbar_track__']            = 'Farbe für die Scrollbar';
-$lang['__scrollbar_thumb__']            = 'Farbe für den Scrollbar Button';
+$lang['__scrollbar_color_track__']      = 'Farbe für die Scrollbar';
+$lang['__scrollbar_color_thumb__']      = 'Farbe für den Scrollbar Button';
 
 /* Dark */
 $lang['__text_color_dark__']              = 'Haupttextfarbe im dunklen Farbschema';
@@ -37,8 +37,8 @@ $lang['__existing_color_dark__']          = 'Farbe für Links zu existierenden S
 $lang['__missing_color_dark__']           = 'Farbe für Links zu nicht-existierenden Seiten im dunklen Farbschema';
 $lang['__selection_color_dark__']            = 'Farbe für den mit der Maus ausgewählten Text im dunklen Farbschema';
 $lang['__selection_background_color_dark__'] = 'Hintergrundfarbe für den mit der Maus ausgewählten Text im dunklen Farbschema';
-$lang['__scrollbar_track_dark__']         = 'Farbe für die Scrollbar im dunklen Farbschema';
-$lang['__scrollbar_thumb_dark__']         = 'Farbe für den Scrollbar Button im dunklen Farbschema';
+$lang['__scrollbar_track_color_dark__']   = 'Farbe für die Scrollbar im dunklen Farbschema';
+$lang['__scrollbar_thumb_color_dark__']   = 'Farbe für den Scrollbar Button im dunklen Farbschema';
 
 /* Toggle Switch */
 $lang['themeSwitch']               = 'Design umschalten';
