@@ -16,7 +16,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 $configUserChoice = tpl_getConf('userChoice');
 
 ?><!DOCTYPE html>
-<html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js" ?>
+<html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
 
 <?php include('tpl_autocolor.php') ?>
 
