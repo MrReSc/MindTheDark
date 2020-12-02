@@ -16,9 +16,7 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 $configUserChoice = tpl_getConf('userChoice');
 
 ?><!DOCTYPE html>
-<html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
-
-<?php include('tpl_autocolor.php') ?>
+<html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js" <?php include('tpl_autocolor.php') ?>>
 
 <head>
     <meta charset="utf-8" />
@@ -27,7 +25,6 @@ $configUserChoice = tpl_getConf('userChoice');
     <?php tpl_metaheaders() ?>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
-    <?php tpl_includeFile('meta.html') ?>
     <?php tpl_includeFile('meta.html') ?>
     <meta name="configUserChoice" id="configUserChoice" content="<?php echo $configUserChoice ?>" />
 </head>

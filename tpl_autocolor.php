@@ -20,14 +20,12 @@ if ($selectedThemeMode == '1')
     $selectedTheme = 'auto';
 }
 
-?><!DOCTYPE html>
+if ($selectedUserChoice == '0')
+{
+    echo 'theme="'.$selectedTheme.'"';
+}
 
-<?php if(tpl_getConf('userChoice') == '0'): ?>
-    <html theme="<?php echo $selectedTheme ?>">   
-<?php endif ?>
-
-<?php if(tpl_getConf('pluginNote') == '1'): ?>
-    <html pluginnote="<?php echo $pluginNote ?>">   
-<?php endif ?>
-
-</html>
+if ($pluginNote == '1')
+{
+    echo 'pluginnote="'.$pluginNote.'"';
+}
