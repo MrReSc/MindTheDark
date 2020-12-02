@@ -1,7 +1,7 @@
 base     mindthedark
 author   Remo Scheidegger
 email    mindthedark@mailbox.org
-date     2020-07-29
+date     2020-12-02
 name     MindTheDark Template
 desc     This template respects the choice of a dark theme of the user.
 url      https://www.dokuwiki.org/template:mindthedark
