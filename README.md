@@ -54,7 +54,7 @@ The plugin is currently used in about ~1% of DokuWiki installations. Almost no p
 
 Issues and improvements can be reported [here](https://github.com/MrReSc/MindTheDark).
 
-<img src="https://dokuwiki.org/lib/plugins/pluginrepo/popularity.php?key=conf_template&output=pie&limit=8&d=20&x=.png" alt="MindTheDark popularity">
+[MindTheDark popularity](https://dokuwiki.org/lib/plugins/pluginrepo/popularity.php?key=conf_template&output=pie&limit=8&d=20&x=.png)
 
 ## Installation
 
