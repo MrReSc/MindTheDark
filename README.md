@@ -50,12 +50,11 @@ Additionally to the standard guaranteed [style.ini](https://www.dokuwiki.org/dev
 The texts are translated into German and English. Contributions are welcome.
 
 ## Status
-For now I consider this template as `beta` for the following reasons: 
-* not heavily tested, especially not on different browsers
-* not tested on mobiles
-* still under construction
+The plugin is currently used in about ~1% of DokuWiki installations. Almost no problems are reported. The current version is stable.
 
 Issues and improvements can be reported [here](https://github.com/MrReSc/MindTheDark).
+
+<img src="https://dokuwiki.org/lib/plugins/pluginrepo/popularity.php?key=conf_template&output=pie&limit=8&d=20&x=.png" alt="MindTheDark popularity">
 
 ## Installation
 
