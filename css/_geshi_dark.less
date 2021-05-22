@@ -20,6 +20,8 @@
 @variables5: #ddddff;
 @lines: #252525;
 @lines2: #272727;
+@lines3: var(--background_site);
+@lines-xtra: #494d26;
 
 .darkModeGeshi{
 
@@ -30,7 +32,13 @@
 	.li2 {
 		background: @lines2;
     }
-
+	.li1 .de1 {
+		background: @lines3;
+	}
+	.li1.ln-xtra .de1, .ln-xtra{
+		background: @lines-xtra;
+	}
+	
     /* brackets		*/
 	.br0 {
 		color: @brackets;
@@ -87,6 +95,8 @@
 	.re5 {
 		color: @variables5;
 	}
+
+
 }
 
 /* dark theme and automatic is switched off*/
