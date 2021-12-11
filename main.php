@@ -14,6 +14,7 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 $hasSidebar = page_findnearest($conf['sidebar']);
 $showSidebar = $hasSidebar && ($ACT=='show');
 $configUserChoice = tpl_getConf('userChoice');
+$configAutoDark = tpl_getConf('autoDark');
 
 ?><!DOCTYPE html>
 <html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js" <?php include('tpl_autocolor.php') ?>>
@@ -27,6 +28,7 @@ $configUserChoice = tpl_getConf('userChoice');
     <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
     <?php tpl_includeFile('meta.html') ?>
     <meta name="configUserChoice" id="configUserChoice" content="<?php echo $configUserChoice ?>" />
+	<meta name="configAutoDark" id="configAutoDark" content="<?php echo $configAutoDark ?>" />
 </head>
 
 <body>

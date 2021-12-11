@@ -86,7 +86,7 @@ jQuery(function() {
     if (jQuery('#configUserChoice').attr('content') == '1'){
         localStorage.setItem('configUserChoice', '1');
 
-        if ($mode == 'auto' || $mode == null) {
+        if ($mode == null) {
             jQuery('html').attr('theme', 'light');
             localStorage.setItem('theme', 'light');
         }
@@ -95,16 +95,33 @@ jQuery(function() {
     if (jQuery('#configUserChoice').attr('content') == '0'){
         localStorage.setItem('configUserChoice', '0');
     }
+	
+	if (jQuery('#configAutoDark').attr('content') == '1'){
+        localStorage.setItem('configAutoDark', '1');
+		localStorage.setItem('changedAutoDark', '0');
+		localStorage.setItem('theme', 'auto');
+		jQuery('html').attr('theme', 'auto');
+	}
+	
+	if (jQuery('#configAutoDark').attr('content') == '0'){
+        localStorage.setItem('configAutoDark', '0');
+		localStorage.setItem('changedAutoDark', '1');
+		localStorage.setItem('theme', 'auto');
+	}
+	
+	
 
     //If ThemeSwitch Link gets clicked
     jQuery('#themeSwitch').click(tpl_themeSwitch);
     jQuery('#themeSwitchMobile').click(tpl_themeSwitch);
 
     function tpl_themeSwitch() {
-
+		
         jQuery(this).blur();    //remove focus on button
         $mode = jQuery('html').attr('theme');   //gets the current theme
-
+		
+		localStorage.setItem('changedAutoDark', '1');
+		
         if ($mode == 'light') {
             jQuery('html').attr('theme', 'dark');
             localStorage.setItem('theme', 'dark');
@@ -117,7 +134,7 @@ jQuery(function() {
     }
 });
 
-if (localStorage.getItem('configUserChoice') == '1'){
+if (localStorage.getItem('configUserChoice') == '1' && (localStorage.getItem('changedAutoDark') == '1')){
     var $themeFromStorage = localStorage.getItem('theme');
     jQuery('html').attr('theme', $themeFromStorage);
 }
