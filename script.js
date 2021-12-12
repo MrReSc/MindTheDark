@@ -97,11 +97,11 @@ jQuery(function() {
     }
 	
 	
-	if ((jQuery('#configAutoDark').attr('content') == '1') && (localStorage.getItem('changedAutoDark') == '0')){
+	if ((jQuery('#configAutoDark').attr('content') == '1')){
         localStorage.setItem('configAutoDark', '1');
-		localStorage.setItem('changedAutoDark', '0');
-		localStorage.setItem('theme', 'auto');
-		jQuery('html').attr('theme', 'auto');
+		if (localStorage.getItem('changedAutoDark') != '1'){
+			localStorage.setItem('changedAutoDark', '0');
+		}
 	}
 	
 	if (jQuery('#configAutoDark').attr('content') == '0'){
