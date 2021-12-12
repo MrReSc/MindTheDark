@@ -96,7 +96,8 @@ jQuery(function() {
         localStorage.setItem('configUserChoice', '0');
     }
 	
-	if (jQuery('#configAutoDark').attr('content') == '1'){
+	
+	if ((jQuery('#configAutoDark').attr('content') == '1') && (localStorage.getItem('changedAutoDark') == '0')){
         localStorage.setItem('configAutoDark', '1');
 		localStorage.setItem('changedAutoDark', '0');
 		localStorage.setItem('theme', 'auto');
@@ -106,7 +107,6 @@ jQuery(function() {
 	if (jQuery('#configAutoDark').attr('content') == '0'){
         localStorage.setItem('configAutoDark', '0');
 		localStorage.setItem('changedAutoDark', '1');
-		localStorage.setItem('theme', 'auto');
 	}
 	
 	
@@ -134,7 +134,7 @@ jQuery(function() {
     }
 });
 
-if (localStorage.getItem('configUserChoice') == '1' && (localStorage.getItem('changedAutoDark') == '1')){
+if ((localStorage.getItem('configUserChoice') == '1') || (localStorage.getItem('changedAutoDark') == '1')){
     var $themeFromStorage = localStorage.getItem('theme');
     jQuery('html').attr('theme', $themeFromStorage);
 }
