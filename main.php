@@ -14,9 +14,26 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 $hasSidebar = page_findnearest($conf['sidebar']);
 $showSidebar = $hasSidebar && ($ACT=='show');
 $configUserChoice = tpl_getConf('userChoice');
+$configAutoDark = tpl_getConf('autoDark');
+$theme = tpl_getConf('theme');
+
+if ($configUserChoice) {
+
+    if (isset($_COOKIE["theme"])) {
+        $theme = $_COOKIE["theme"];
+    } 
+    else {
+        $theme = "light";
+    }
+}
+
+if ($configAutoDark and !$configUserChoice) {
+    $theme = "auto";
+}
+
 
 ?><!DOCTYPE html>
-<html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js" <?php include('tpl_autocolor.php') ?>>
+<html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js" theme="<?php echo $theme ?>">
 
 <head>
     <meta charset="utf-8" />

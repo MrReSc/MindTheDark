@@ -82,20 +82,6 @@ jQuery(function() {
 
     var $mode = jQuery('html').attr('theme');   //gets the current theme
 
-    //If User's choice is enabled, safe in local storage
-    if (jQuery('#configUserChoice').attr('content') == '1'){
-        localStorage.setItem('configUserChoice', '1');
-
-        if ($mode == 'auto' || $mode == null) {
-            jQuery('html').attr('theme', 'light');
-            localStorage.setItem('theme', 'light');
-        }
-    }
-
-    if (jQuery('#configUserChoice').attr('content') == '0'){
-        localStorage.setItem('configUserChoice', '0');
-    }
-
     //If ThemeSwitch Link gets clicked
     jQuery('#themeSwitch').click(tpl_themeSwitch);
     jQuery('#themeSwitchMobile').click(tpl_themeSwitch);
@@ -107,17 +93,12 @@ jQuery(function() {
 
         if ($mode == 'light') {
             jQuery('html').attr('theme', 'dark');
-            localStorage.setItem('theme', 'dark');
+            document.cookie = "theme=dark; expires=Wed, 05 Aug 2039 23:00:00 UTC; path=/"
         }
 
         if ($mode == 'dark' || $mode == 'auto' || $mode == null) {
             jQuery('html').attr('theme', 'light');
-            localStorage.setItem('theme', 'light');
+            document.cookie = "theme=light; expires=Wed, 05 Aug 2039 23:00:00 UTC; path=/"
         }
     }
 });
-
-if (localStorage.getItem('configUserChoice') == '1'){
-    var $themeFromStorage = localStorage.getItem('theme');
-    jQuery('html').attr('theme', $themeFromStorage);
-}
