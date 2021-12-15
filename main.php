@@ -17,7 +17,10 @@ $configUserChoice = tpl_getConf('userChoice');
 $configAutoDark = tpl_getConf('autoDark');
 $theme = tpl_getConf('theme');
 
-if ($configUserChoice) {
+if ($configAutoDark) {
+    $theme = "auto";
+}
+if ($configUserChoice && $_COOKIE["theme"] != null) {
 
     if (isset($_COOKIE["theme"])) {
         $theme = $_COOKIE["theme"];
@@ -25,10 +28,6 @@ if ($configUserChoice) {
     else {
         $theme = "light";
     }
-}
-
-if ($configAutoDark and !$configUserChoice) {
-    $theme = "auto";
 }
 
 
