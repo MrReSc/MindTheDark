@@ -13,6 +13,10 @@ header('X-UA-Compatible: IE=edge,chrome=1');
 
 $hasSidebar = page_findnearest($conf['sidebar']);
 $showSidebar = $hasSidebar && ($ACT=='show');
+
+/**
+ * MindTheDark theme settings
+ */
 $configUserChoice = tpl_getConf('userChoice');
 $configAutoDark = tpl_getConf('autoDark');
 $theme = tpl_getConf('theme');
@@ -31,9 +35,19 @@ if ($configAutoDark and !$configUserChoice) {
     $theme = "auto";
 }
 
+// MindTheDark additional plugins
+$pluginNote = "0";
+if (tpl_getConf('pluginNote')) {
+    $pluginNote = "1";
+}
 
 ?><!DOCTYPE html>
-<html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js" theme="<?php echo $theme ?>">
+<html lang="<?php echo $conf['lang'] ?>" 
+    dir="<?php echo $lang['direction'] ?>" 
+    class="no-js" 
+    theme="<?php echo $theme ?>" 
+    pluginnote="<?php echo $pluginNote ?>"
+>
 
 <head>
     <meta charset="utf-8" />
