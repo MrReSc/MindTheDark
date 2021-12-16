@@ -15,7 +15,7 @@ $hasSidebar = page_findnearest($conf['sidebar']);
 $showSidebar = $hasSidebar && ($ACT=='show');
 
 /**
- * MindTheDark theme settings
+ * MindTheDark theme settings ******************************************************
  */
 $configUserChoice = tpl_getConf('userChoice');
 $configAutoDark = tpl_getConf('autoDark');
@@ -27,7 +27,14 @@ if ($configUserChoice) {
         $theme = $_COOKIE["theme"];
     } 
     else {
-        $theme = "light";
+        // If the cookie has never been set and both options are enabled, 
+        // then the auto mode will be used until the user makes a choice
+        if ($configAutoDark) {
+            $theme = "auto";
+        }
+        else {
+            $theme = "light";
+        } 
     }
 }
 
@@ -40,6 +47,10 @@ $pluginNote = "0";
 if (tpl_getConf('pluginNote')) {
     $pluginNote = "1";
 }
+
+/**
+ * *********************************************************************************
+ */
 
 ?><!DOCTYPE html>
 <html lang="<?php echo $conf['lang'] ?>" 

@@ -13,6 +13,8 @@ If the `autoDark` option is enabled, the color scheme of the operating system is
 
 If neither of the two options is selected, a static color scheme can be selected via `theme`.
 
+If both options are enabled, then Auto mode will be used until the user makes a choice. From this point on, only the user's choice is taken into account.
+
 ## Features
 * light and a dark color scheme (`theme` option in Configuration Manager)
 * automatic color scheme depending on operating system settings (`autoDark` option in Configuration Manager)
