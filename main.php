@@ -47,6 +47,10 @@ $pluginNote = "0";
 if (tpl_getConf('pluginNote')) {
     $pluginNote = "1";
 }
+$pluginWrap = "0";
+if (tpl_getConf('pluginWrap')) {
+    $pluginWrap = "1";
+}
 
 /**
  * *********************************************************************************
@@ -58,6 +62,7 @@ if (tpl_getConf('pluginNote')) {
     class="no-js" 
     theme="<?php echo $theme ?>" 
     pluginnote="<?php echo $pluginNote ?>"
+    pluginwrap="<?php echo $pluginWrap ?>"
 >
 
 <head>

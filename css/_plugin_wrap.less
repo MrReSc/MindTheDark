@@ -1,0 +1,67 @@
+/**
+ * This file provides styles for the Wrap plugin if the option pluginWrap is enabled
+*/
+
+&:root[pluginWrap="1"] {
+
+    
+    /* general styles */
+    .wrap_info { background-color: #d1d7f; }
+
+    .wrap_important { background-color: #ffd39f; }
+	
+	.wrap_alert { background-color: #ffbcaf; }
+
+    .wrap_tip { background-color: #fff79f; }
+
+    .wrap_help { background-color: #dcc2ef; }
+
+    .wrap_todo { background-color: #c2efdd; }
+	
+	.wrap_download { background-color: #d6efc2; }
+	
+	.wrap_hi {
+    background-color: #ff9;
+    overflow: hidden;
+	}
+	
+	
+
+    /**************************************************/
+    /* DARK MODE                                      */
+    /* for dark mode change the values like Wrap would */
+    /**************************************************/
+
+    .darkModeWrapPlugin{
+        .wrap_info { background-color: #343e4a; }
+
+        .wrap_important { background-color: #6c3b00; }
+
+        .wrap_alert { background-color: #6b1100; }
+    
+        .wrap_tip { background-color: #665e00; }
+		
+		.wrap_help { background-color: #3c1757; }
+		
+		.wrap_todo { background-color: #17573e; }
+		
+		.wrap_download { background-color: #345717; }
+		
+		.wrap_hi {
+		background-color: #4e4e0d;
+		}
+    }
+
+    /* dark theme and automatic is switched off*/
+    &:root[theme="dark"] {
+        .darkModeWrapPlugin();
+    }
+
+    /* User prefers dark theme and automatic is switched on*/
+    @media (prefers-color-scheme: dark){
+        &:root[theme="auto"] {
+            .darkModeWrapPlugin();
+        }
+    }
+}
+
