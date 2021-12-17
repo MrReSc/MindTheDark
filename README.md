@@ -29,6 +29,9 @@ If [Note Plugin](https://www.dokuwiki.org/plugin:note) is installed you can acti
 
 <img src="screenshot/screenshot_note_plugin.png" height="200">
 
+### Wrap Plugin
+If [Wrap Plugin](https://www.dokuwiki.org/plugin:wrap) is installed you can activate the support with the option `pluginWrap` in the configuration manager.
+
 ## Customizing
 The MindTheDark Template offers all customizing like the standard [DokuWiki Template](https://www.dokuwiki.org/template:dokuwiki#customizing).
 
@@ -66,3 +69,4 @@ Refer to [template](https://www.dokuwiki.org/template) on how to install and use
 ## Remarks
 * The `autoDark` option only works with modern browsers. The compatibility can be checked [here](https://caniuse.com/#feat=prefers-color-scheme).
 * GeShi dark mode style sheet provided by @asfethan [https://cyberasylum.eu/how-to-change-geshi-stylesheet](https://cyberasylum.eu/how-to-change-geshi-stylesheet)
+* Wrap plugging support was created by @Gamemap. Thanks for that!
