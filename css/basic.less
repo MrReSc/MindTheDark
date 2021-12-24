@@ -66,6 +66,25 @@ body {
     background-color: var(--background, #fff);
 }
 
+#config__manager tr .input, 
+#config__manager tr input, 
+#config__manager tr textarea, 
+#config__manager tr select {
+    background-color: var(--background, #fff);
+    border: 1px solid var(--border,#333);
+    color: var(--text,#000);
+}
+
+#config__manager tr.default .input, 
+#config__manager tr.default input, 
+#config__manager tr.default textarea, 
+#config__manager tr.default select, 
+#config__manager .selectiondefault {
+    background-color: var(--background_site, #fff);
+    border: 1px solid var(--border,#333);
+    color: var(--text,#000);
+}
+
 #extension__manager ul.tabs li.active a {
     background-color: var(--background_alt, #eee);
     color: var(--text, #333);
