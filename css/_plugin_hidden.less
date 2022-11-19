@@ -1,0 +1,23 @@
+&:root[pluginhidden="1"] {
+
+    .darkModeWrapPlugin{
+        .hiddenOnHidden > p, .hiddenOnVisible > p {background-color: #4c4c4c;} 
+        div.hiddenGlobal.hiddenHidden > div.hiddenHead p::after {background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmCxMPOA+1yX0IAAAAmElEQVRIx83TUQ6AIAwD0OlJuRnctH4pBAquLDHClwt9yWAazLUTJssXXxB+YEIoACU0gBCnRdeXLQQvsY2X+rUXbyq78aeqAqWvay2Usa5cYmH1A8E5Ck/iX4Fk2S2wpwEAZN/r2HC0Do2LsO4oH9pX4CbkeAWAvBNvAezEOSDEGSDFQQZJ/btIC84RWl2iQHBAIGaAm7gAlzL+RlP6BKgAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMTEtMTlUMTU6NTI6MTArMDA6MDDzvP91AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTExLTE5VDE1OjUyOjEwKzAwOjAwguFHyQAAAABJRU5ErkJggg==') !important;}
+        div.hiddenGlobal:not(.hiddenHidden) > div.hiddenHead p::after {background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfmCxMQACAe/RjnAAAAqElEQVRIx82USw7DMAhEaU/KzcxNXxdV4h+RAHdRvIliz7OGkRGkuJSGILHD5sgBWhTA97ZFDtCigBHR5WBxwIWY5HELF2KRZwGs8jrgzqUGGGJ9S6WYvksW2pmFAVEHkHkLPCNelLrYq5bC3wH0sXuR2p7oWIGEvCFRAviIFMBDBADHKfzMwmET51GpWcA2ae8/IcAu74gkwKYtzVqwbVMzTbTIYW99ABsY/karmuncAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIyLTExLTE5VDE2OjAwOjI0KzAwOjAwQRTMNAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMi0xMS0xOVQxNjowMDoyNCswMDowMDBJdIgAAAAASUVORK5CYII=') !important;}
+    }
+
+    /* dark theme and automatic is switched off*/
+    &:root[theme="dark"] {
+        .darkModeHiddenPlugin();
+    }
+
+
+
+    /* User prefers dark theme and automatic is switched on*/
+    @media (prefers-color-scheme: dark){
+        &:root[theme="auto"] {
+            .darkModeHiddenPlugin();
+        }
+    }
+}
+

@@ -51,6 +51,11 @@ $pluginWrap = "0";
 if (tpl_getConf('pluginWrap')) {
     $pluginWrap = "1";
 }
+$pluginHidden = "0";
+if (tpl_getConf('pluginHidden')) {
+    $pluginHidden = "1";
+}
+
 
 /**
  * *********************************************************************************
@@ -63,6 +68,7 @@ if (tpl_getConf('pluginWrap')) {
     theme="<?php echo $theme ?>" 
     pluginnote="<?php echo $pluginNote ?>"
     pluginwrap="<?php echo $pluginWrap ?>"
+    pluginhidden="<?php echo $pluginHidden ?>"
 >
 
 <head>

@@ -9,3 +9,4 @@ $lang['autoDark']   = 'Automatic detection of the color scheme by the operating 
 $lang['userChoice'] = 'Activates a button so that the user can switch the color scheme himself.';
 $lang['pluginNote'] = 'Activate support for the Note plugin.';
 $lang['pluginWrap']       = 'Activate support for the Wrap plugin.';
+$lang['pluginHidden']     = 'Activate support for the Hidden plugin.';

@@ -9,4 +9,4 @@ $meta['autoDark']         = array('onoff');
 $meta['userChoice']       = array('onoff');
 $meta['pluginNote']       = array('onoff');
 $meta['pluginWrap']       = array('onoff');
-
+$meta['pluginHidden']     = array('onoff');
