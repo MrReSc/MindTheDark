@@ -9,3 +9,4 @@ $lang['autoDark']         = 'Automatische Erkennung des Farbschema vom Betriebss
 $lang['userChoice']       = 'Aktiviert eine Button damit der Benutzer selber das Farbschema umschalten kann.';
 $lang['pluginNote']       = 'Unterstützung für das Note Plugin aktivieren.';
 $lang['pluginWrap']       = 'Unterstützung für das Wrap-Plugin aktivieren.';
+$lang['pluginHidden']     = 'Unterstützung für das Hidden Plugin aktivieren.';
