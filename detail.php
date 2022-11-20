@@ -7,12 +7,44 @@
  * @license  GPL 2 (http://www.gnu.org/licenses/gpl.html)
  */
 
+/**
+ * MindTheDark theme settings ******************************************************
+ */
+$configUserChoice = tpl_getConf('userChoice');
+$configAutoDark = tpl_getConf('autoDark');
+$theme = tpl_getConf('theme');
+
+if ($configUserChoice) {
+
+    if (isset($_COOKIE["theme"])) {
+        $theme = $_COOKIE["theme"];
+    } 
+    else {
+        // If the cookie has never been set and both options are enabled, 
+        // then the auto mode will be used until the user makes a choice
+        if ($configAutoDark) {
+            $theme = "auto";
+        }
+        else {
+            $theme = "light";
+        } 
+    }
+}
+
+if ($configAutoDark and !$configUserChoice) {
+    $theme = "auto";
+}
+
 // must be run from within DokuWiki
 if (!defined('DOKU_INC')) die();
 header('X-UA-Compatible: IE=edge,chrome=1');
 
 ?><!DOCTYPE html>
-<html lang="<?php echo $conf['lang']?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
+<html lang="<?php echo $conf['lang']?>" 
+    dir="<?php echo $lang['direction'] ?>" 
+    class="no-js" 
+    theme="<?php echo $theme ?>">
+
 <head>
     <meta charset="utf-8" />
     <title>
@@ -22,6 +54,7 @@ header('X-UA-Compatible: IE=edge,chrome=1');
     <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
     <?php tpl_metaheaders()?>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="configUserChoice" id="configUserChoice" content="<?php echo $configUserChoice ?>" />
     <?php echo tpl_favicon(array('favicon', 'mobile')) ?>
     <?php tpl_includeFile('meta.html') ?>
 </head>
