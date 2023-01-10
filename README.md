@@ -52,7 +52,7 @@ Additionally to the standard guaranteed [style.ini](https://www.dokuwiki.org/dev
 | `__note_plugin_tip_color__`           | base color for note plugin `<tip>`|
 
 ## Localization
-The texts are translated into German and English. Contributions are welcome.
+The texts are translated into German, English and Czech. Contributions are welcome.
 
 ## Status
 The plugin is currently used in about ~1% of DokuWiki installations. Almost no problems are reported. The current version is stable.
@@ -70,3 +70,4 @@ Refer to [template](https://www.dokuwiki.org/template) on how to install and use
 * The `autoDark` option only works with modern browsers. The compatibility can be checked [here](https://caniuse.com/#feat=prefers-color-scheme).
 * GeShi dark mode style sheet provided by @asfethan [https://cyberasylum.eu/how-to-change-geshi-stylesheet](https://cyberasylum.eu/how-to-change-geshi-stylesheet)
 * Wrap plugging support was created by @Gamemap [@Gamemap](https://github.com/Gamemap). Thanks for that!
+* Czech translation by [@jvn](https://github.com/jnv). Thanks for that!
