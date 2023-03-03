@@ -21,25 +21,12 @@ $configUserChoice = tpl_getConf('userChoice');
 $configAutoDark = tpl_getConf('autoDark');
 $theme = tpl_getConf('theme');
 
-if ($configUserChoice) {
-
-    if (isset($_COOKIE["theme"])) {
-        $theme = $_COOKIE["theme"];
-    } 
-    else {
-        // If the cookie has never been set and both options are enabled, 
-        // then the auto mode will be used until the user makes a choice
-        if ($configAutoDark) {
-            $theme = "auto";
-        }
-        else {
-            $theme = "light";
-        } 
-    }
+if ($configAutoDark) {
+    $theme = "auto";
 }
 
-if ($configAutoDark and !$configUserChoice) {
-    $theme = "auto";
+if ($configUserChoice && isset($_COOKIE["theme"])) {
+    $theme = $_COOKIE["theme"];
 }
 
 // MindTheDark additional plugins
