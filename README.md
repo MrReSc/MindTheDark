@@ -3,7 +3,7 @@ This template is based on the standard [DokuWiki Template](https://www.dokuwiki.
 
 MindTheDark offers a light and a dark color scheme for your DokuWiki. The color scheme and the style are optimized for software documentation. The optics are flat.
 
-If the `userChoice` option is enabled, an option to change the color scheme will appear in the header.
+If the `userChoice` option is enabled, an option to change the color scheme will appear in the header. If only `userChoice` is enabled, then the selected static mode will be used until the user makes a choice.
 
 ![screenshot_toggle](screenshot/screenshot_toggle.png)
 
@@ -71,3 +71,4 @@ Refer to [template](https://www.dokuwiki.org/template) on how to install and use
 * GeShi dark mode style sheet provided by @asfethan [https://cyberasylum.eu/how-to-change-geshi-stylesheet](https://cyberasylum.eu/how-to-change-geshi-stylesheet)
 * Wrap plugging support was created by @Gamemap [@Gamemap](https://github.com/Gamemap). Thanks for that!
 * Czech translation by [@jvn](https://github.com/jnv). Thanks for that!
+* Optimization of the theme selection by [@Racso](https://github.com/Racso). Thanks for that! 
