@@ -16,9 +16,9 @@ $theme = tpl_getConf('theme');
 
 if ($configUserChoice) {
 
-    if (isset($_COOKIE["theme"])) {
+    if (isset($_COOKIE["theme"]) && in_array($_COOKIE["theme"], array('light', 'dark'), true)) {
         $theme = $_COOKIE["theme"];
-    } 
+    }
     else {
         // If the cookie has never been set and both options are enabled, 
         // then the auto mode will be used until the user makes a choice
