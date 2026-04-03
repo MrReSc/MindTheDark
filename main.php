@@ -25,7 +25,7 @@ if ($configAutoDark) {
     $theme = "auto";
 }
 
-if ($configUserChoice && isset($_COOKIE["theme"])) {
+if ($configUserChoice && isset($_COOKIE["theme"]) && in_array($_COOKIE["theme"], array('light', 'dark'), true)) {
     $theme = $_COOKIE["theme"];
 }
 
