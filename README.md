@@ -71,4 +71,5 @@ Refer to [template](https://www.dokuwiki.org/template) on how to install and use
 * GeShi dark mode style sheet provided by @asfethan [https://cyberasylum.eu/how-to-change-geshi-stylesheet](https://cyberasylum.eu/how-to-change-geshi-stylesheet)
 * Wrap plugging support was created by @Gamemap [@Gamemap](https://github.com/Gamemap). Thanks for that!
 * Czech translation by [@jvn](https://github.com/jnv). Thanks for that!
-* Optimization of the theme selection by [@Racso](https://github.com/Racso). Thanks for that! 
+* Optimization of the theme selection by [@Racso](https://github.com/Racso). Thanks for that!
+* Remove XSS possibility via theme cookie by [@thanegill](https://github.com/thanegill). Thanks for that!
